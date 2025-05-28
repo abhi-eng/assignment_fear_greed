@@ -1,0 +1,50 @@
+Insights:
+
+
+| Market Sentiment  | Avg. Daily Return | Std. Dev. | Count |
+| ----------------- | ----------------- | --------- | ----- |
+| **Extreme Fear**  | -0.00059          | 0.0196    | 508   |
+| **Fear**          | +0.00088          | 0.0197    | 781   |
+| **Neutral**       | +0.00003          | 0.0197    | 396   |
+| **Greed**         | +0.00263          | 0.0193    | 633   |
+| **Extreme Greed** | +0.00512          | 0.0209    | 326   |
+
+
+- The model slightly favors profitable outcomes but struggles overall (47.5% accuracy).
+
+- Sentiment features do contain predictive value, but additional signals (technical indicators, volume, news) would likely improve performance.
+
+- Returns increase steadily from Extreme Fear to Extreme Greed.
+
+- Negative returns are associated with Extreme Fear, suggesting cautious or reactive trading.
+
+- Strong positive returns occur during Greed and Extreme Greed, possibly reflecting market momentum or overconfidence.
+
+- Risk (volatility) is highest under Extreme Greed, indicating increased uncertainty during euphoric market phases.
+
+Conclusion :- 
+
+1. Total Closed PnL vs. Sentiment Index
+- No strong pattern emerged visually between the sentiment index (Fear-Greed) and total closed PnL.
+- Profits and losses appear scattered across all sentiment levels, indicating other factors may dominate PnL outcomes.
+
+2. Trade Count by Sentiment Classification
+- Trade activity tends to increase under "Greed" and "Extreme Greed".
+- Fewer trades are typically placed during "Extreme Fear" periods.
+- This implies higher confidence or market participation during positive sentiment phases.
+
+3. Correlation Matrix Insights
+Variables Correlation with Sentiment Index
+Total Closed PnL -0.01
+Avg Closed PnL -0.08
+Trade Count 0.40
+Total Tokens Traded 0.26
+Total Fee 0.25
+
+Trade Count shows the strongest positive correlation with sentiment.
+
+PnL values show very weak or no correlation, implying sentiment alone doesn't determine profitability.
+
+
+
+
